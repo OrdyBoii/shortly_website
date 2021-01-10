@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  /* Primary */
+  --primary-cyan: hsl(180, 66%, 49%);
+  --primary-violet: hsl(257, 27%, 26%);
+
+  /* Secondary */
+  --secondary-red: hsl(0, 87%, 67%);
+
+  /* Neutrals */
+  --neutral-grey: hsl(0, 0%, 75%);
+  --neutral-grey-violet: hsl(257, 7%, 63%);
+  --neutral-dark-blue: hsl(255, 11%, 22%);
+  --neutral-dark-violet: hsl(260, 8%, 14%);
+  --neutral-white: #fff;
+
+  /* Other */
+  --font-default: 18px;
+  --shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Responsive */
+  --laptop: 1024px;
+  --tablet: 768px;
+  --mobile: 480px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: var(--font-default);
+  letter-spacing: 0.02em;
+}
+
+.section {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+button {
+  background-color: var(--primary-cyan);
+  border: none;
+  border-radius: 50px;
+  padding: 15px 25px;
+  color: var(--neutral-white);
+}
+
+button:hover {
+  background-color: var(--primary-violet);
+  box-shadow: var(--shadow);
+}
