@@ -15,10 +15,10 @@
     <title>Shortly - Shorten Your Links Faster</title>
   </head>
   <body>
-    <header class="nav-header">
+    <header class="section nav-section">
       <div class="container nav-container">
         <nav>
-          <img src="./assets/images/icon-brand-recognition.svg" alt="Shortly logo" />
+          <img src="./assets/logo.svg" alt="Shortly logo" />
           <ul>
             <li class="nav-links"><a href="">Features</a></li>
             <li class="nav-links"><a href="">Pricing</a></li>
@@ -27,10 +27,125 @@
         </nav>
         <div class="nav-actions">
           <a href="" target="_blank">Login</a>
-          <button type="button">Sign Up</button>
+          <button type="button" role="button" onclick="getStarted()">Sign Up</button>
         </div>
+        <i class="fas fa-bars" id="mobile-menu-btn"></i>
+        <div class="mobile-menu"></div>
       </div>
     </header>
+
+    <main role="main" class="section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand's recognition and get detailed insights on how your links are
+            performing.
+          </p>
+          <button role="buton" type="button" onclick="getStarted()">Get Started</button>
+        </div>
+        <div class="hero-image">
+          <img
+            src="./assets/illustration-working.svg"
+            alt="Illustration of desk computer working"
+          />
+        </div>
+      </div>
+    </main>
+
+    <section class="section statistics-section">
+      <div class="container shorten-link-container">
+        <form>
+          <label for="shorten-links-input" class="shorten-link-label"
+            >Shorten your links here...</label
+          >
+          <input type="text" id="shorten-link" />
+          <button type="submit" role="submit" class="shorten-link-button">Shorten It!</button>
+          <p class="message"></p>
+        </form>
+      </div>
+
+      <div class="container" id="shorten-results"></div>
+
+      <div class="container">
+        <div class="container centered-container how-it-works-header">
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our advanced statistics
+            dashboard.
+          </p>
+        </div>
+      </div>
+
+      <div class="container how-it-works-grid">
+        <div class="how-it-works-col">
+          <img src="./assets/icon-brand-recognition.svg" alt="positive data graph icon" />
+          <h3>Brand Recognition</h3>
+          <p>
+            Boost your brand recognition with each click. Generic links don't mean a thing. Branded
+            links help instill confidence in your content.
+          </p>
+        </div>
+        <div class="grid-divider"></div>
+        <div class="how-it-works-col">
+          <img src="./assets/icon-detailed-records.svg" alt="dashboard indicator icon" />
+          <h3>Detailed Records</h3>
+          <p>
+            Gain insights into who is clicking your links. Knowing when and where people engage with
+            your content helps inform better decisions.
+          </p>
+        </div>
+        <div class="grid-divider"></div>
+        <div class="how-it-works-col">
+          <img src="./assets/icon-fully-customizable.svg" alt="physical customisation tools icon" />
+          <h3>Fully Customisable</h3>
+          <p>
+            Improve brand awareness and content discoverability through customisable links,
+            supercharging audience engagement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section call-to-action">
+      <div class="container centered-container">
+        <h4>Boost your links today</h4>
+        <button type="button" onclick="getStarted()">Get Started</button>
+      </div>
+    </section>
+
+    <footer class="section footer-section">
+      <div class="container footer-container">
+        <img src="./assets/logo-white.svg" alt="Shortly logo" />
+        <div class="footer-grid">
+          <ul class="col">
+            <li class="footer-link-title">Features</li>
+            <li><a href="/">Link Shortening</a></li>
+            <li><a href="/">Branded Links</a></li>
+            <li><a href="/">Analytics</a></li>
+          </ul>
+          <ul class="col">
+            <li class="footer-link-title">Resources</li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Developers</a></li>
+            <li><a href="/">Support</a></li>
+          </ul>
+          <ul class="col">
+            <li class="footer-link-title">Company</li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Our Team</a></li>
+            <li><a href="/">Careers</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="www.pinterest.com"><i class="fab fa-pinterest"></i></a>
+            <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./src/scripts/app.js"></script>
   </body>
